@@ -13,99 +13,7 @@ body {
     color: #1f2d3d;
 }
 
-.container {
-    width: 85%;
-    margin: auto;
-    padding: 40px 0;
-}
-
-.hero {
-    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(37, 99, 235, 0.3);
-    filter: blur(100px);
-    top: -50px;
-    right: -50px;
-}
-    
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-.hero p {
-    font-size: 20px;
-    opacity: 0.9;
-}
-
-    .section-divider {
-    height: 1px;
-    background: #e2e8f0;
-    margin: 60px 0;
-}
-    
-.section {
-    margin-top: 60px;
-}
-
-.section h2 {
-    color: #0f172a;
-    border-left: 5px solid #2563eb;
-    padding-left: 12px;
-    margin-bottom: 20px;
-}
-    
-.alt-section {
-    background: #f1f5f9;
-    padding: 40px 20px;
-    border-radius: 10px;
-}
-    
-.grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 250px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.highlight {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0073e6;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px;
-    font-size: 14px;
-    color: #888;
-}
-
+/* NAVIGATION */
 .navbar {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -116,6 +24,8 @@ ul {
 }
 
 .nav-container {
+    width: 85%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,17 +50,88 @@ ul {
     font-weight: 600;
 }
 
-.nav-links a:hover {
-    color: #0073e6;
-}    
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* LAYOUT */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section {
+    margin-top: 60px;
+    max-width: 900px;
+}
+
+.section h2 {
+    color: #0f172a;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+/* ALT SECTIONS */
+.alt-section {
+    background: #f1f5f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* METRICS */
+.highlight {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <div class="navbar">
-    <div class="container nav-container">
+    <div class="nav-container">
         <h2 class="logo">Digital Insights Hub</h2>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -160,131 +141,129 @@ ul {
         </ul>
     </div>
 </div>
-    
+
 <!-- HERO -->
 <div class="hero">
-    <div class="container">
-        <h1>Project Aurora</h1>
-        <p>Transforming the Patient Appointment Booking Journey at Aurora Health Group</p>
-    </div>
+    <h1>Project Aurora</h1>
+    <p>Transforming the Patient Appointment Booking Journey</p>
 </div>
 
 <div class="container">
 
+<!-- SNAPSHOT -->
+<div class="section">
+    <div class="grid">
+        <div class="card">
+            <h3>⚠️ Problem</h3>
+            <p>Fragmented booking process causing delays and missed demand</p>
+        </div>
+        <div class="card">
+            <h3>⚙️ Approach</h3>
+            <p>Process mapping, Lean analysis, service redesign</p>
+        </div>
+        <div class="card">
+            <h3>📈 Outcome</h3>
+            <p>Improved booking efficiency and reduced DNAs</p>
+        </div>
+    </div>
+</div>
+
 <!-- OVERVIEW -->
 <div class="section">
     <h2>Overview</h2>
-    <p><strong>Client:</strong> Aurora Health Group (Fictional)<br>
+    <p>
+    <strong>Client:</strong> Aurora Health Group<br>
     <strong>Industry:</strong> Private Healthcare<br>
-    <strong>Focus:</strong> Patient Access & Booking Optimisation</p>
+    <strong>Focus:</strong> Patient Access & Booking Optimisation
+    </p>
 </div>
 
 <!-- PROBLEM -->
 <div class="section alt-section">
     <h2>The Problem</h2>
     <ul>
-        <li>Long wait times to secure appointments</li>
-        <li>Missed patient demand due to unanswered calls</li>
-        <li>Manual scheduling processes</li>
-        <li>High DNA (Did Not Attend) rates</li>
-        <li>Fragmented systems and duplicated data entry</li>
+        <li>Long wait times</li>
+        <li>Manual scheduling</li>
+        <li>High DNA rates</li>
+        <li>Fragmented systems</li>
     </ul>
 </div>
 
+<!-- ROOT CAUSE -->
 <div class="section alt-section">
     <h2>Root Cause Insight</h2>
     <p>
-        Analysis revealed that the primary issue was not demand, but the absence of a 
-        unified scheduling system. Manual triage across multiple channels created delays, 
-        increased administrative burden, and prevented real-time visibility of clinician capacity.
+    The core issue was the absence of a unified scheduling system, 
+    leading to delays and lack of real-time visibility of capacity.
     </p>
 </div>
 
 <!-- AS IS -->
-<div class="section alt-section">
+<div class="section">
     <h2>AS-IS Process</h2>
-    <p>Appointment requests are received through phone, email, and web channels. Operations teams manually check clinician availability and coordinate bookings, leading to delays and inefficiencies.</p>
-
+    <p>Manual booking across channels causing inefficiencies.</p>
     <div class="card">
-        <p><em>📌 Insert BPMN diagram here (export from Miro / Visio as image)</em></p>
-    </div>
-</div>
-
-<!-- PAIN POINTS -->
-<div class="section alt-section">
-    <h2>Key Pain Points</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Operational</h3>
-            <ul>
-                <li>Manual diary checks</li>
-                <li>Repetitive admin tasks</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Experience</h3>
-            <ul>
-                <li>Delayed responses</li>
-                <li>Poor communication</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Data</h3>
-            <ul>
-                <li>No real-time availability</li>
-                <li>Lack of performance tracking</li>
-            </ul>
-        </div>
+        <p><em>Insert AS-IS diagram here</em></p>
     </div>
 </div>
 
 <!-- TO BE -->
 <div class="section alt-section">
-   <h2>TO-BE Service Model</h2>
-<p>
-The redesigned model introduces a digital front door, automates scheduling logic, 
-and aligns patient demand directly with clinician availability.
-</p>
-
-<ul>
-        <li>Digital self-service booking introduced</li>
-        <li>Automated SMS/email reminders</li>
-        <li>Integrated scheduling system</li>
-        <li>Reduced manual intervention</li>
+    <h2>TO-BE Service Model</h2>
+    <ul>
+        <li>Digital booking</li>
+        <li>Automated reminders</li>
+        <li>Integrated systems</li>
     </ul>
+</div>
 
-    <div class="card">
-        <p><em>📌 Insert TO-BE BPMN diagram here</em></p>
+<!-- BEFORE VS AFTER -->
+<div class="section">
+    <h2>Before vs After</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Before</h3>
+            <ul>
+                <li>Manual</li>
+                <li>No reminders</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>After</h3>
+            <ul>
+                <li>Automated</li>
+                <li>Digital</li>
+            </ul>
+        </div>
     </div>
 </div>
 
-<!-- DATA -->
+<!-- METRICS -->
 <div class="section alt-section">
-    <h2>Data & Metrics</h2>
+    <h2>Key Metrics</h2>
     <div class="grid">
         <div class="card">
-            <p class="highlight">25–30%</p>
-            <p>Reduction in DNA rates</p>
+            <p class="highlight">30%</p>
+            <p>Reduction in DNAs</p>
         </div>
         <div class="card">
             <p class="highlight">40%</p>
-            <p>Faster booking turnaround</p>
+            <p>Faster booking</p>
         </div>
         <div class="card">
-            <p class="highlight">↑</p>
-            <p>Improved booking conversion</p>
+            <p class="highlight">+20%</p>
+            <p>Conversion increase</p>
         </div>
     </div>
 </div>
 
-<!-- BUSINESS IMPACT -->
-<div class="section alt-section">
+<!-- IMPACT -->
+<div class="section">
     <h2>Business Impact</h2>
     <ul>
-        <li>Reduced operational workload through automation</li>
-        <li>Improved patient satisfaction and access speed</li>
-        <li>Enabled data-driven capacity planning</li>
-        <li>Created scalable digital booking capability</li>
+        <li>Reduced workload</li>
+        <li>Improved patient experience</li>
+        <li>Enabled scalability</li>
     </ul>
 </div>
 
@@ -292,16 +271,15 @@ and aligns patient demand directly with clinician availability.
 <div class="section alt-section">
     <h2>Skills Demonstrated</h2>
     <ul>
-        <li>Process Modelling (BPMN)</li>
-        <li>Lean Analysis & Root Cause Identification</li>
-        <li>Service Design Thinking</li>
-        <li>Data & KPI Framework Design</li>
-        <li>Stakeholder-Centric Process Design</li>
+        <li>BPMN Process Modelling</li>
+        <li>Lean Analysis</li>
+        <li>Service Design</li>
+        <li>KPI Frameworks</li>
     </ul>
 </div>
 
-</div> <!--
-    
+</div>
+
 <div class="footer">
     © Digital Insights Hub
 </div>
