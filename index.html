@@ -13,14 +13,13 @@ body {
     color: #1f2d3d;
 }
 
-/* NAVIGATION */
+/* NAV */
 .navbar {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 .nav-container {
@@ -32,16 +31,10 @@ body {
     padding: 15px 0;
 }
 
-.logo {
-    margin: 0;
-    color: #0a2540;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
-    margin: 0;
 }
 
 .nav-links a {
@@ -56,7 +49,6 @@ body {
     color: white;
     padding: 100px 0;
     text-align: center;
-    position: relative;
 }
 
 .hero h1 {
@@ -81,12 +73,11 @@ body {
 }
 
 .section h2 {
-    color: #0f172a;
     border-left: 5px solid #2563eb;
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
-/* ALT SECTIONS */
+/* ALT SECTION */
 .alt-section {
     background: #f1f5f9;
     padding: 30px;
@@ -104,11 +95,10 @@ body {
 .card {
     background: white;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 10px;
     flex: 1;
     min-width: 250px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
 /* METRICS */
@@ -132,7 +122,7 @@ body {
 <!-- NAV -->
 <div class="navbar">
     <div class="nav-container">
-        <h2 class="logo">Digital Insights Hub</h2>
+        <h2>Digital Insights Hub</h2>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
@@ -145,143 +135,141 @@ body {
 <!-- HERO -->
 <div class="hero">
     <h1>Project Aurora</h1>
-    <p>Transforming the Patient Appointment Booking Journey</p>
+    <p>Transforming Patient Appointment Booking at Aurora Health Group</p>
 </div>
 
 <div class="container">
 
-<!-- SNAPSHOT -->
+<!-- 1. OVERVIEW -->
 <div class="section">
-    <div class="grid">
-        <div class="card">
-            <h3>⚠️ Problem</h3>
-            <p>Fragmented booking process causing delays and missed demand</p>
-        </div>
-        <div class="card">
-            <h3>⚙️ Approach</h3>
-            <p>Process mapping, Lean analysis, service redesign</p>
-        </div>
-        <div class="card">
-            <h3>📈 Outcome</h3>
-            <p>Improved booking efficiency and reduced DNAs</p>
-        </div>
-    </div>
+<h2>Project Overview & Strategic Context</h2>
+
+<p>
+Aurora Health Group is a mid-sized private healthcare provider delivering services across the UK. With increasing demand for digital access, inefficiencies within the booking journey began to impact patient experience and operational performance.
+</p>
+
+<p>
+Project Aurora focused on redesigning the booking process to improve access, reduce inefficiencies, and enable scalable digital service delivery.
+</p>
+
+<ul>
+<li>Reduce booking turnaround time</li>
+<li>Improve patient experience</li>
+<li>Reduce DNA rates</li>
+<li>Enable digital booking</li>
+</ul>
 </div>
 
-<!-- OVERVIEW -->
+<!-- 2. PROBLEM -->
+<div class="section alt-section">
+<h2>Problem Definition & Research Insights</h2>
+
+<ul>
+<li>Manual booking processes</li>
+<li>No real-time availability visibility</li>
+<li>High admin dependency</li>
+<li>Inconsistent communication</li>
+</ul>
+
+<p>
+The issue was not demand, but the lack of integration between demand and clinician capacity.
+</p>
+</div>
+
+<!-- 3. AS IS -->
 <div class="section">
-    <h2>Overview</h2>
-    <p>
-    <strong>Client:</strong> Aurora Health Group<br>
-    <strong>Industry:</strong> Private Healthcare<br>
-    <strong>Focus:</strong> Patient Access & Booking Optimisation
-    </p>
+<h2>Current State (AS-IS Process)</h2>
+
+<p>
+The booking process relied heavily on manual coordination, creating delays and inefficiencies.
+</p>
+
+<img src="asis.png" style="width:100%; border-radius:10px; margin-top:20px;">
+
+<ul>
+<li>Manual availability checks</li>
+<li>Repeated patient contact</li>
+<li>No automation</li>
+<li>Fragmented systems</li>
+</ul>
 </div>
 
-<!-- PROBLEM -->
+<!-- 4. ROOT CAUSE -->
 <div class="section alt-section">
-    <h2>The Problem</h2>
-    <ul>
-        <li>Long wait times</li>
-        <li>Manual scheduling</li>
-        <li>High DNA rates</li>
-        <li>Fragmented systems</li>
-    </ul>
+<h2>Root Cause Analysis</h2>
+
+<ul>
+<li>No integrated booking platform</li>
+<li>Lack of centralised availability</li>
+<li>Manual workflows</li>
+<li>No automation</li>
+</ul>
 </div>
 
-<!-- ROOT CAUSE -->
-<div class="section alt-section">
-    <h2>Root Cause Insight</h2>
-    <p>
-    The core issue was the absence of a unified scheduling system, 
-    leading to delays and lack of real-time visibility of capacity.
-    </p>
-</div>
-
-<!-- AS IS -->
+<!-- 5. TO BE -->
 <div class="section">
-    <h2>AS-IS Process</h2>
-    <p>Manual booking across channels causing inefficiencies.</p>
-    <div class="card">
-        <p><em>Insert AS-IS diagram here</em></p>
-    </div>
+<h2>Solution Design (TO-BE Model)</h2>
+
+<ul>
+<li>Digital booking platform</li>
+<li>Real-time availability</li>
+<li>Automated reminders</li>
+<li>Reduced manual effort</li>
+</ul>
+
+<img src="tobe.png" style="width:100%; border-radius:10px; margin-top:20px;">
 </div>
 
-<!-- TO BE -->
+<!-- 6. APPROACH -->
 <div class="section alt-section">
-    <h2>TO-BE Service Model</h2>
-    <ul>
-        <li>Digital booking</li>
-        <li>Automated reminders</li>
-        <li>Integrated systems</li>
-    </ul>
+<h2>Delivery Approach & Methods</h2>
+
+<ul>
+<li>BPMN process modelling</li>
+<li>Lean analysis</li>
+<li>Service design</li>
+<li>Stakeholder engagement</li>
+</ul>
 </div>
 
-<!-- BEFORE VS AFTER -->
+<!-- 7. METRICS -->
 <div class="section">
-    <h2>Before vs After</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Before</h3>
-            <ul>
-                <li>Manual</li>
-                <li>No reminders</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>After</h3>
-            <ul>
-                <li>Automated</li>
-                <li>Digital</li>
-            </ul>
-        </div>
-    </div>
+<h2>Business Impact & Metrics</h2>
+
+<div class="grid">
+<div class="card">
+<p class="highlight">30%</p>
+<p>DNA Reduction</p>
 </div>
 
-<!-- METRICS -->
+<div class="card">
+<p class="highlight">40%</p>
+<p>Faster Booking</p>
+</div>
+
+<div class="card">
+<p class="highlight">+20%</p>
+<p>Conversion Increase</p>
+</div>
+</div>
+</div>
+
+<!-- 8. LEARNINGS -->
 <div class="section alt-section">
-    <h2>Key Metrics</h2>
-    <div class="grid">
-        <div class="card">
-            <p class="highlight">30%</p>
-            <p>Reduction in DNAs</p>
-        </div>
-        <div class="card">
-            <p class="highlight">40%</p>
-            <p>Faster booking</p>
-        </div>
-        <div class="card">
-            <p class="highlight">+20%</p>
-            <p>Conversion increase</p>
-        </div>
-    </div>
-</div>
+<h2>Key Learnings & Reflection</h2>
 
-<!-- IMPACT -->
-<div class="section">
-    <h2>Business Impact</h2>
-    <ul>
-        <li>Reduced workload</li>
-        <li>Improved patient experience</li>
-        <li>Enabled scalability</li>
-    </ul>
-</div>
-
-<!-- SKILLS -->
-<div class="section alt-section">
-    <h2>Skills Demonstrated</h2>
-    <ul>
-        <li>BPMN Process Modelling</li>
-        <li>Lean Analysis</li>
-        <li>Service Design</li>
-        <li>KPI Frameworks</li>
-    </ul>
+<ul>
+<li>Process issues often stem from system fragmentation</li>
+<li>Demand vs capacity alignment is critical</li>
+<li>Automation significantly improves efficiency</li>
+<li>Stakeholder alignment drives success</li>
+</ul>
 </div>
 
 </div>
 
 <div class="footer">
-    © Digital Insights Hub
+© Digital Insights Hub
 </div>
 
 </body>
