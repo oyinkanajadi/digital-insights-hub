@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 /* ── DESIGN TOKENS ─────────────────────────────── */
 :root {
   /* Nexus accent: deep amber/slate — distinct from Aurora's blue */
@@ -32,6 +33,20 @@
 
   --rad: 10px;
   --transition: 0.25s ease;
+}
+
+/* ── PROJECT CARD ── */
+.project-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--rad);
+  padding: 22px;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 /* ── RESET & BASE ──────────────────────────────── */
@@ -1031,37 +1046,33 @@ p { color: var(--ink); }
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
 
   <!-- Aurora -->
-  <a href="aurora.html" style="text-decoration:none;">
-    <div style="background: var(--white); border:1px solid var(--line); border-radius: var(--rad); padding:22px;">
-      <h3 style="margin-bottom:6px;">Project Aurora</h3>
-      <p style="font-size:0.9rem; color:var(--muted);">
-        Service and user journey transformation — redesigning processes to improve access, flow, and experience.
-      </p>
-    </div>
-  </a>
+<a href="aurora.html">
+  <div class="project-card">
+    <h3>Project Aurora</h3>
+    <p>
+      Service and user journey transformation — redesigning processes to improve access, flow, and experience.
+    </p>
+  </div>
+</a>
 
-  <!-- Nexus -->
-  <a href="nexus.html" style="text-decoration:none;">
-    <div style="background: var(--white); border:1px solid var(--line); border-radius: var(--rad); padding:22px;">
-      <h3 style="margin-bottom:6px;">Project Nexus</h3>
-      <p style="font-size:0.9rem; color:var(--muted);">
-        System implementation and stabilisation — resolving integration failures and enabling controlled rollout.
-      </p>
-    </div>
-  </a>
-
-  <!-- Atlas -->
-  <a href="atlas.html" style="text-decoration:none;">
-    <div style="background: var(--white); border:1px solid var(--line); border-radius: var(--rad); padding:22px;">
-      <h3 style="margin-bottom:6px;">Project Atlas</h3>
-      <p style="font-size:0.9rem; color:var(--muted);">
-        Data and insight transformation — creating a single source of truth and enabling proactive decision-making.
-      </p>
-    </div>
-  </a>
-
+<!-- Nexus (current page) -->
+<div class="project-card" style="background: var(--accent-pale);">
+  <h3>Project Nexus (Current)</h3>
+  <p>You are currently viewing this case study.</p>
 </div>
 
+<!-- Atlas -->
+<a href="atlas.html">
+  <div class="project-card">
+    <h3>Project Atlas</h3>
+    <p>
+      Data and insight transformation — creating a single source of truth and enabling proactive decision-making.
+    </p>
+  </div>
+</a>
+      
+</div> <!-- grid -->
+</div> <!-- container -->
 </section>
   
 <!-- ── CONTACT ────────────────────────────────── -->
